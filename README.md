@@ -39,6 +39,16 @@ O projeto foi desenvolvido durante a **Imersão Dados com Python da Alura**, com
 - Git
 - GitHub
 
+## Fonte de dados
+
+A aplicação utiliza um **dataset tratado disponibilizado durante a Imersão Dados com Python da Alura**, carregado diretamente de uma fonte remota pelo Pandas.
+
+Essa abordagem permite que o dashboard publicado no Streamlit carregue os dados automaticamente durante sua execução.
+
+O repositório também contém o arquivo `df_limpo.csv`, mantido como referência local do conjunto de dados trabalhado durante o projeto.
+
+> Para executar a aplicação, é necessária uma conexão com a internet para que o dataset utilizado pelo dashboard possa ser carregado.
+
 ## Estrutura do projeto
 
 ```text
@@ -52,23 +62,35 @@ imersao-alura-dados_python/
 
 ### `app.py`
 
+Arquivo principal da aplicação.
+
 Responsável pelo carregamento dos dados, aplicação dos filtros, cálculo dos indicadores e construção da interface e das visualizações do dashboard.
 
 ### `df_limpo.csv`
 
-Dataset utilizado pela aplicação para as análises e visualizações.
+Arquivo local mantido no repositório como referência do conjunto de dados tratado durante o desenvolvimento do projeto.
+
+A aplicação atual utiliza diretamente a versão remota do dataset.
 
 ### `requirements.txt`
 
 Contém as dependências necessárias para executar o projeto.
 
+### `.gitignore`
+
+Define arquivos e diretórios locais que não devem ser versionados, como ambientes virtuais e arquivos temporários do Python.
+
 ## Como executar
 
 ### 1. Pré-requisitos
 
-Tenha o **Python 3.10 ou superior** instalado.
+Tenha instalado:
 
-Para verificar:
+- **Python 3.10 ou superior**
+- Git
+- Conexão com a internet
+
+Para verificar sua versão do Python:
 
 ```bash
 python --version
@@ -139,7 +161,8 @@ Algumas funcionalidades que poderiam ser exploradas em versões futuras:
 - novos indicadores analíticos;
 - exportação dos dados filtrados;
 - melhoria da experiência visual;
-- otimização do carregamento dos dados.
+- otimização do carregamento dos dados;
+- tornar o projeto independente de fontes externas de dados.
 
 ## Autor
 
