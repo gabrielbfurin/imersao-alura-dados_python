@@ -1,59 +1,74 @@
-# Imersão Alura - dados_python
+# Dashboard de Salários na Área de Dados
 
-Dashboard interativo desenvolvido com os conhecimentos adquiridos na **Imersão Alura - dados_python**. O projeto foi construído em **Python** com **Streamlit**, **Pandas** e **Plotly**, com foco na análise visual de salários na área de dados.
+Dashboard interativo desenvolvido em **Python** para exploração e visualização de dados salariais de profissionais da área de dados.
 
-A aplicação permite explorar diferentes recortes do dataset por meio de filtros laterais e exibe métricas e gráficos interativos de forma simples e intuitiva.
+A aplicação utiliza **Pandas** para manipulação dos dados, **Plotly** para criação das visualizações e **Streamlit** para disponibilizar uma interface web interativa.
+
+O projeto foi desenvolvido durante a **Imersão Dados com Python da Alura**, como parte dos meus estudos de análise de dados e desenvolvimento de aplicações Python.
+
+## Aplicação online
+
+**[Acesse o dashboard em funcionamento](https://imersao-alura-dadospython-by-gabrielfurin.streamlit.app/)**
 
 ## Preview
 
-### Dashboard principal:
+### Dashboard principal
 
 <p align="center">
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c311efcd-6c69-4e6e-bce5-f28bde1fc484" />
+  <img width="1920" height="1080" alt="Dashboard de salários na área de dados" src="https://github.com/user-attachments/assets/c311efcd-6c69-4e6e-bce5-f28bde1fc484" />
 </p>
-
-### Rodando o sistema:
-
-[Acesse o projeto em funcionamento](https://imersao-alura-dadospython-by-gabrielfurin.streamlit.app/)
 
 ## Funcionalidades
 
-* Filtros interativos por ano, senioridade, contrato e tamanho da empresa
-* Exibição de métricas gerais como salário médio, salário máximo e total de registros
-* Gráfico com o top 10 cargos por salário médio
-* Histograma da distribuição salarial
-* Gráfico de proporção entre tipos de trabalho
-* Mapa com a média salarial por país para o cargo de Data Scientist
-* Visualização tabular dos dados filtrados
+- Filtros interativos por ano, senioridade, contrato e tamanho da empresa
+- Cálculo de salário médio e salário máximo
+- Identificação do cargo mais frequente
+- Visualização do número total de registros
+- Ranking dos 10 cargos com maior salário médio
+- Histograma da distribuição salarial
+- Análise da proporção entre modalidades de trabalho
+- Mapa da média salarial de Data Scientists por país
+- Visualização dos dados filtrados em tabela
 
 ## Tecnologias utilizadas
 
-* Python
-* Streamlit
-* Pandas
-* Plotly
-* VS Code
+- Python
+- Pandas
+- Streamlit
+- Plotly
+- Git
+- GitHub
 
 ## Estrutura do projeto
 
-```bash
+```text
 imersao-alura-dados_python/
 ├── app.py
 ├── df_limpo.csv
-└── requirements.txt
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
-## Como executar o projeto
+### `app.py`
+
+Responsável pelo carregamento dos dados, aplicação dos filtros, cálculo dos indicadores e construção da interface e das visualizações do dashboard.
+
+### `df_limpo.csv`
+
+Dataset utilizado pela aplicação para as análises e visualizações.
+
+### `requirements.txt`
+
+Contém as dependências necessárias para executar o projeto.
+
+## Como executar
 
 ### 1. Pré-requisitos
 
-Antes de executar o projeto, tenha certeza de que sua máquina atende aos seguintes requisitos:
+Tenha o **Python 3.10 ou superior** instalado.
 
-* Python 3.10 ou superior
-* Um terminal (CMD, PowerShell, Git Bash ou terminal do VS Code)
-* Sistema operacional Windows, Linux ou macOS
-
-Para verificar a instalação do Python, utilize:
+Para verificar:
 
 ```bash
 python --version
@@ -65,13 +80,13 @@ python --version
 git clone https://github.com/gabrielbfurin/imersao-alura-dados_python.git
 ```
 
-### 3. Acesse a pasta do projeto
+### 3. Entre na pasta
 
 ```bash
 cd imersao-alura-dados_python
 ```
 
-### 4. Crie e ative um ambiente virtual
+### 4. Crie um ambiente virtual
 
 ```bash
 python -m venv .venv
@@ -95,30 +110,37 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 6. Execute o projeto
+### 6. Execute a aplicação
 
 ```bash
 streamlit run app.py
 ```
 
+O Streamlit iniciará um servidor local e disponibilizará o dashboard pelo navegador.
+
 ## Aprendizados
 
-* Criação de dashboards interativos com Streamlit
-* Manipulação e análise de dados com Pandas
-* Construção de gráficos com Plotly
-* Filtragem e exploração de datasets
-* Organização de uma aplicação Python para visualização de dados
+Durante o desenvolvimento deste projeto, pratiquei principalmente:
 
-## Possíveis melhorias
+- manipulação e filtragem de dados com Pandas;
+- criação de dashboards interativos com Streamlit;
+- construção de gráficos com Plotly;
+- criação e interpretação de indicadores;
+- exploração de datasets;
+- uso de filtros dinâmicos;
+- organização e publicação de uma aplicação Python.
 
-* Adicionar mais filtros analíticos
-* Criar comparações entre cargos e países
-* Melhorar o design visual do dashboard
-* Incluir exportação dos dados filtrados
-* Expandir a análise com novos gráficos e indicadores
+## Possíveis evoluções
+
+Algumas funcionalidades que poderiam ser exploradas em versões futuras:
+
+- comparação direta entre cargos;
+- comparação salarial entre diferentes países;
+- novos indicadores analíticos;
+- exportação dos dados filtrados;
+- melhoria da experiência visual;
+- otimização do carregamento dos dados.
 
 ## Autor
 
-Desenvolvido por **Gabriel B. Furin**
-
-⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
+Desenvolvido por **Gabriel Furin**.
